@@ -1,6 +1,6 @@
 /* UC 1 */
 body {
-    margin: 0px auto;
+    margin: 0px;
     height: 100%;
 }
 
@@ -13,25 +13,26 @@ body {
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    border: 0px solid green;
+    border: 0px solid blue;
+    text-align: left;
 }
 
 .logo-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 0px solid green;
+    border: 0px solid blue;
     width: 80%;
 }
 .logo-content-img {
-    border: 0px solid #42515f;
+    border: 0px solid #323333;
 }
 
 .address-text {
-    font: normal normal bold 20px/25px Montserrat;
+    font: normal normal bold 22px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
-    color: #82a70c;
+    color: #008CFF;
     text-transform: capitalize;
 }
 .address-book {
@@ -48,15 +49,47 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0px solid green;
+    padding-top: 60px;
+    /*border: 0px solid green;*/
 }
 
 .form {
     width: 65%;
-    padding:  44px 60px;
+    /*padding:  44px 60px;*/
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow:  0px 3px 6px #00000029;
     border:  1px solid #f5f5f5;
     border-radius: 8px;
     opacity: 1;
 }
+
+.form-head-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #008CFF 0% 0% no-repeat padding-box;
+    height: 78px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.form-head {
+    font: normal normal normal 24px/37px Roboto;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: #008CFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding-top: 10px;
+    padding-left: 300px;
+}
+
+.form-logo-content {
+    padding-left: 200px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
