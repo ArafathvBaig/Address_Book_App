@@ -27,7 +27,7 @@ body {
     border: 0px solid #42515f;
 }
 
-.contact-text {
+.address-text {
     font: normal normal bold 20px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
@@ -41,6 +41,7 @@ body {
     box-sizing: border-box;
 }
 
+/* UC 2 */
 .form-content {
     min-height: calc(100% - 80px);
     background-color: #f7f7f7;
@@ -48,4 +49,14 @@ body {
     justify-content: center;
     align-items: center;
     border: 0px solid green;
+}
+
+.form {
+    width: 65%;
+    padding:  44px 60px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow:  0px 3px 6px #00000029;
+    border:  1px solid #f5f5f5;
+    border-radius: 8px;
+    opacity: 1;
 }
