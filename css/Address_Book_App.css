@@ -61,6 +61,7 @@ body {
     border:  1px solid #f5f5f5;
     border-radius: 8px;
     opacity: 1;
+    padding-bottom: 50px;
 }
 
 .form-head-content {
@@ -91,5 +92,60 @@ body {
     padding-left: 200px;
     cursor: pointer;
     padding-top: 10px;
+}
+
+/* UC 3 */
+.row-content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: left;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.row-content-row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 80px;
+}
+
+.single-row-content {
+    display: flex;
+    padding-right: 20px;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 0px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.text{
+    font-size: 16px;
+    color: #42515f;
+    opacity: 1;
+    font-family: Roboto;
+}
+
+.label{
+    text-align: left;
+    font: normal normal normal 16px/24px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+}
+
+.input{
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   resize: vertical;
+   opacity: 1;
+   margin-right: 15px;
 }
 
