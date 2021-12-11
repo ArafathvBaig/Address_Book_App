@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Rototo:wght@300:400:500:600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/Address_Book_App.css">
+  <script src="../js/Address_Book_App.js"></script>
+  <script src="../js/Address_Book_EL.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
   <title>Address Book App</title>
 </head>
@@ -36,17 +38,21 @@
         <label class="label text" for="name">Full Name</label>
         <input class="input" type="type" id="name"
                 name="name" placeholder="Your name.." required>
+        <error-output class="name-error" for="name"></error-output>
       </div>
 
       <div class="row-content">
-        <label class="label text" for="name">Phone Number</label>
-        <input class="input" type="type" id="phone number"
-                name="phone number" placeholder="Your Phone Number.." required>
+        <label class="label text" for="phoneNumber">Phone Number</label>
+        <input class="input" type="type" id="phoneNumber"
+                name="phoneNumber" placeholder="Your Phone Number.." required>
+        <error-output class="phoneNumber-error" for="phoneNumber"></error-output>
       </div>
 
       <div class="row-content">
         <label class="label text" for="address">Address</label>
-        <textarea id="address" class="input" name="address" placeholder="" style="height: 100px" required></textarea>
+        <input id="address" type="type" class="address" 
+                name="address" placeholder="Your Address.." style="height: 100px;" required>
+        <error-output class="address-error" for="address"></error-output>
       </div>
 
       <div class="row-content-row">
@@ -102,7 +108,8 @@
 
         <div class="single-row-content">
           <label class="label text" for="zip">Zip</label>
-          <input class="input" type="text" name="Zip" id="zip" required>
+          <input class="input" type="type" name="Zip" id="zip" placeholder="Your Zip Code.." required>
+          <error-output class="zip-error" for="zip"></error-output>
         </div>
       </div>      
 
