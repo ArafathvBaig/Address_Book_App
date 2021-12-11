@@ -109,17 +109,38 @@ function createAndUpdateStorage(addressBookData)
 
 const createAddressBook = () => {
 	let addressBookData = new Contact();
+
 	try {
 		addressBookData.name = getInputValueById('#name');
 	} catch (e) {
 		setTextValue('.name-error', e);
 		throw e;
 	}
-	addressBookData.phoneNumber = getSelectedValues('[name=phoneNumber]').pop();
-	addressBookData.address = getSelectedValues('[name=address]').pop();
+
+    try {
+		addressBookData.phoneNumber = getInputValueById('#phoneNumber');
+	} catch (e) {
+		setTextValue('.phoneNumber-error', e);
+		throw e;
+	}
+
+    try {
+		addressBookData.address = getInputValueById('#address');
+	} catch (e) {
+		setTextValue('.address-error', e);
+		throw e;
+	}
+
     addressBookData.city = getSelectedValues('[name=city]').pop();
     addressBookData.state = getSelectedValues('[name=state]').pop();
-    addressBookData.zip = getSelectedValues('[name=zip]').pop();
+    
+    try {
+		addressBookData.zip = getInputValueById('#zip');
+	} catch (e) {
+		setTextValue('.zip-error', e);
+		throw e;
+	}
+
 	alert(addressBookData.toString());
 	return addressBookData;
 }
@@ -156,21 +177,3 @@ const getInputElementValue = (id) => {
 	return value;
 }
 
-const resetForm = () => {
-	setTextValue('#name','');
-	setTextValue('#phoneNumber','');
-	setTextValue('#address','');
-	setValue('#city','');
-	setValue('#state','');
-    setTextValue('#zip','');
-}
-
-const setTextValue = (id, value) => {
-	const element = document.querySelector(id);
-	element.textContent = value;
-}
-
-const setValue = (id, value) => {
-	const element = document.querySelector(id);
-	element.value = value;
-}
